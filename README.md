@@ -1,5 +1,5 @@
 # Hotel v1.0
-### Material EducativoDjango.
+### Material Educativo Framework Django.
 Desarrollo WebApp Gestion Hotelera Desarrollado en Django MySQL Python Javascript
 
 ---
