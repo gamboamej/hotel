@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+<div class="container">
+    <nav id="navbar-example2" class="navbar navbar-light bg-light px-3">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <ul class="nav nav-pills">
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading1">First</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#scrollspyHeading2">Second</a>
+          </li>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Dropdown</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="#scrollspyHeading3">Third</a></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading4">Fourth</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="#scrollspyHeading5">Fifth</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <div data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example" tabindex="0">
+        <h4 id="scrollspyHeading1">First heading</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dicta autem veritatis placeat consectetur, neque in cupiditate libero assumenda porro necessitatibus officia voluptatem molestiae maxime, odit laborum odio numquam itaque quaerat.</p>
+        <h4 id="scrollspyHeading2">Second heading</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Impedit ea tenetur eligendi doloribus beatae voluptates blanditiis atque ipsam recusandae vel officiis amet velit quam, aspernatur similique soluta molestias itaque vero.
+        Expedita quasi eligendi consectetur nobis aliquam assumenda, voluptates similique labore voluptatum suscipit dolor tempore dolorem minus itaque, consequatur voluptate obcaecati magnam architecto. Est et placeat dolores cupiditate totam id velit.</p>
+        <h4 id="scrollspyHeading3">Third heading</h4>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Accusamus blanditiis provident, voluptatem excepturi maxime nobis tempore incidunt dicta veritatis odit delectus, distinctio assumenda eligendi quam, autem adipisci. Consectetur, quae incidunt?</p>
+        <h4 id="scrollspyHeading4">Fourth heading</h4>
+        <p>...</p>
+        <h4 id="scrollspyHeading5">Fifth heading</h4>
+        <p>...</p>
+      </div>
+      
+  </div>
+{% endblock %}

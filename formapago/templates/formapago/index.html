@@ -1,0 +1,43 @@
+{% extends "base.html" %} {% block content %}
+<div class="container">
+  <h1>Formas de Pago</h1>
+
+  {% if lst_forma_pago %}
+  <table id="tbl_forma_pago" class="table table-striped">
+    <thead>
+      <tr>
+        <th scope="col">#</th>
+        <th scope="col">Tipo</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Imagen</th>
+        <th scope="col">Enlace</th>
+        <th scope="col">Acciones</th>
+      </tr>
+    </thead>
+    <tbody>
+      {% for fila in lst_forma_pago %}
+      <tr>
+        <th scope="row">{{ fila.co_forma_pago }}</th>
+        <td>{{ fila.co_tipo }}</td>
+        <td>{{ fila.tx_nombre }}</td>
+        <td>
+          <img src="/media/{{ fila.tx_foto }}" alt="{{ fila.tx_nombre }}" />
+        </td>
+        <td>{{ fila.tx_enlace }}</td>
+        <td>
+          <div class="btn-group" role="group" aria-label="Basic example">
+            <button type="button" class="btn btn-primary">Editar</button>
+            <button type="button" class="btn btn-success">Activar</button>
+            <button type="button" class="btn btn-danger">Borrar</button>
+          </div>
+        </td>
+      </tr>
+      {% endfor %}
+    </tbody>
+  </table>
+
+  {% else %}
+  <p>No existen Formas de pago.</p>
+  {% endif %}
+</div>
+{% endblock %}
