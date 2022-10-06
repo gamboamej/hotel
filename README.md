@@ -1,4 +1,4 @@
-# hotel
+# Hotel v1.0
 ### Material EducativoDjango.
 Desarrollo WebApp Gestion Hotelera Desarrollado en Django MySQL Python Javascript
 
